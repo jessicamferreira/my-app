@@ -1,7 +1,7 @@
-import React from 'react';
-import GlobalStyle from './config/GlobalStyle';
-import { ThemeProvider } from 'styled-components';
-import { AppRoutes } from './routes/AppRouter';
+import React from "react";
+import GlobalStyle from "./config/GlobalStyle";
+import { ThemeProvider } from "styled-components";
+import { AppRoutes } from "./routes/AppRouter";
 
 const themes = {
   dark: {
@@ -13,17 +13,17 @@ const themes = {
   light: {
     color: "#333",
     bgColor: "#f5f5f5",
-    primary: "#6747b6e9",
+    primary: "#6747b6e9"
   }
-}
+};
 
 function App() {
   return (
     <div>
       <ThemeProvider theme={themes.light}>
-    <GlobalStyle />
-    <AppRoutes />
-    </ThemeProvider>
+        <GlobalStyle />
+        <AppRoutes />
+      </ThemeProvider>
     </div>
   );
 }
